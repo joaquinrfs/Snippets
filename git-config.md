@@ -1,0 +1,33 @@
+# Git Config
+
+Some configurations for Git.
+
+Specially useful for those who reinstall their systems a lot.
+
+## Basic configuration
+
+```
+git config --global user.name <name>
+git config --global user.email <email>
+```
+
+## Want to sign your commits?
+
+```
+git config --global user.signingkey <key_id>
+git config --global commit.gpgsign true
+```
+
+*You can get your key ID with `gpg --list-keys --keyid-format LONG`.*
+
+## Using Windows?
+
+You might need to specify the location of GPG.
+
+```
+git config --global gpg.program <location>
+``` 
+
+*<sup>1: </sup>You might have to use double backslashes to separate directories `\\`.*
+
+*<sup>2: </sup>If the path has spaces, you should wrap it with quotes ("" or '').*
