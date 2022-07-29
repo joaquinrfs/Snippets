@@ -31,3 +31,20 @@ git config --global gpg.program <location>
 *<sup>1: </sup>You might have to use double backslashes to separate directories `\\`.*
 
 *<sup>2: </sup>If the path has spaces, you should wrap it with quotes ("" or '').*
+
+## Using Linux?
+
+You might run into the following issue when trying to sign your commits:
+
+```
+error: gpg failed to sign the data
+fatal: failed to write commit object
+```
+
+Generally you can fix it by running:
+
+```
+export GPG_TTY=$(tty)
+```
+
+_Psst!: You can add that line to your `~/.bashrc` or `~/.bash_profile` file._
