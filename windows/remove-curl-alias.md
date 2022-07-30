@@ -2,7 +2,7 @@
 
 It might surprise you to know that `curl` comes preinstalled in Windows; it might surprise you even more to know that you cannot use it in PowerShell.
 
-You you run `curl` in PowerShell, you will get a strange output. This is because in PowerShell, `curl` is an alias for `Invoke-WebRequest`.
+If you run `curl` in PowerShell, you will get a strange output. This is because in PowerShell, `curl` is an alias for `Invoke-WebRequest`.
 
 To temporarily remove this alias, you can execute:
 
