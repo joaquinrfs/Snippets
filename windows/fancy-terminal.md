@@ -10,7 +10,7 @@ Sometimes we spend hours a day looking at a terminal, why not give ourselves a t
 	- Running `Set-ExecutionPolicy RemoteSigned` as administrator.
 	- Enabling the policy in the _For developers_ category, somewhere in Windows settings (depends on Windows version).
 3. Install [Oh My Posh](https://ohmyposh.dev/):
-	1. Run
+	1. Run:
 		```
 		winget install JanDeDobbeleer.OhMyPosh -s winget
 		```
@@ -18,9 +18,9 @@ Sometimes we spend hours a day looking at a terminal, why not give ourselves a t
 		```
 		oh-my-posh init pwsh --config ~\AppData\Local\Programs\oh-my-posh\themes\default.omp.json | Invoke-Expression
 		```
-	3. Relaunch the terminal
-	4. Install a _Nerd Font_
-		1. Run as administrator
+	3. Relaunch the terminal.
+	4. Install a _Nerd Font_:
+		1. Run as administrator:
 			```
 			oh-my-posh font install
 			```
@@ -28,8 +28,8 @@ Sometimes we spend hours a day looking at a terminal, why not give ourselves a t
 		- You can check them out [here](https://www.nerdfonts.com/font-downloads).
 	- Run `Get-PoshThemes` to get a list of possible themes.
 	- In the line you added to your profile, replace `default` with any profile name you want.
-3. Install [Terminal-Icons](https://github.com/devblackops/Terminal-Icons)
-	1. Run as administrator
+3. Install [Terminal-Icons](https://github.com/devblackops/Terminal-Icons):
+	1. Run as administrator:
 		```
 		Install-Module -Name Terminal-Icons -Repository PSGallery
 		```
