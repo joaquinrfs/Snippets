@@ -26,7 +26,7 @@ You might need to specify the location of GPG.
 
 ```
 git config --global gpg.program <location>
-``` 
+```
 
 *<sup>1: </sup>You might have to use double backslashes to separate directories `\\`.*
 
@@ -41,10 +41,18 @@ error: gpg failed to sign the data
 fatal: failed to write commit object
 ```
 
-Generally you can fix it by running:
+Generally you can fix (temporarily) it by running:
 
 ```
 export GPG_TTY=$(tty)
 ```
 
 _Psst!: You can add that line to your `~/.bashrc` or `~/.bash_profile` file._
+
+## Using Unicode?
+
+You can make `git status` show your tildes and other weird characters by running:
+
+```
+git config --global core.quotepath off
+```
