@@ -28,7 +28,7 @@ You might need to specify the location of GPG.
 git config --global gpg.program <location>
 ```
 
-*<sup>1: </sup>You might have to use double backslashes to separate directories `\\`.*
+*<sup>1:</sup> ~~You might have to use double backslashes to separate directories.~~ Git will add the backslashes for you, so you don't need to add them ;).*
 
 *<sup>2: </sup>If the path has spaces, you should wrap it with quotes ("" or '').*
 
